@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to  Broadcast</h1>
+    <div>
+        <h3 id="msg"></h3>
+        <h3 id="ads"></h3>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        let msgElement=document.getElementById("msg")
+        let adElement=document.getElementById("ads")
+        let socket=io()
+        socket.on('message',(data)=>{
+            msgElement.innerHTML=data
+        })
+        socket.on('advertisement',(data)=>{
+            adElement.innerHTML=data.ad
+        })
+        socket.emit("clientevent",{clientmsg:"hey this a client"})
+    </script>
+</body>
+</html>

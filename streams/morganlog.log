@@ -1,0 +1,4 @@
+::1 - - [28/Jul/2022:12:17:12 +0000] "GET /home HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+::1 - - [28/Jul/2022:12:17:17 +0000] "GET /dashboard HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+GET /dashboard 304 - - 26.929 ms
+GET /home 304 - - 2.782 ms
